@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #212936;
+  font-family: "Montserrat";
+}
+header {
+  background: #141722;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .lws img {
+  width: 30px;
+}
+header nav .logo img {
+  width: 200px;
+}
+header nav .lws {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 8px;
+}
+header nav {
+  padding: 0.8rem 1.6rem;
+}
+main {
+  margin-bottom: 80px;
+}
+main .container {
+  display: grid;
+  grid-template-columns: 2.3fr 1fr;
+  grid-gap: 20px;
+  padding: 30px;
+}
+main .left .img {
+}
+main .left .img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 7px;
+  -webkit-transition: opacity 0.8s linear;
+  -moz-transition: opacity 0.8s linear;
+  transition: all 0.8s linear;
+}
+.container .left .content .title-desc {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.container .left .content .title-desc h2 {
+  font-weight: 700;
+  font-size: 21px;
+}
+.container .left .content .title-desc p {
+  font-size: 14px;
+}
+main .sidebar,
+main .done-lists {
+  max-width: 370px;
+  background: #141722;
+  color: #fff;
+  /* padding: 1rem; */
+  height: 430px;
+  overflow: auto;
+  border-radius: 7px;
+}
+main .done-lists {
+  margin-top: 20px;
+  cursor: pointer;
+}
+main .done-lists {
+  height: fit-content;
+}
+
+main .sidebar ul {
+}
+main .sidebar .milestones {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem; */
+
+  cursor: pointer;
+}
+.milestone,
+.module {
+  padding: 10px;
+  margin: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid rgb(31, 41, 55);
+}
+.shown-panel {
+  display: flex;
+  align-items: center;
+}
+.shown-panel.open {
+  font-weight: 700;
+}
+.shown-panel .checkbox {
+  width: 40px;
+}
+.hidden-panel {
+  max-height: 0;
+  margin-top: 10px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.8s;
+  -moz-transition: max-height 0.8s;
+  transition: max-height 0.8s;
+}
+.hidden-panel.open {
+  max-height: 400px;
+}
+.milestone i {
+  margin-left: 10px;
+}
