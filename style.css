@@ -43,8 +43,6 @@ main .container {
   grid-gap: 20px;
   padding: 30px;
 }
-main .left .img {
-}
 main .left .img img {
   width: 100%;
   height: auto;
@@ -74,7 +72,6 @@ main .done-lists {
   max-width: 370px;
   background: #141722;
   color: #fff;
-  /* padding: 1rem; */
   height: 430px;
   overflow: auto;
   border-radius: 7px;
@@ -86,16 +83,7 @@ main .done-lists {
 main .done-lists {
   height: fit-content;
 }
-
-main .sidebar ul {
-}
 main .sidebar .milestones {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0.6rem; */
-
   cursor: pointer;
 }
 .milestone,
@@ -109,7 +97,7 @@ main .sidebar .milestones {
   display: flex;
   align-items: center;
 }
-.shown-panel.open {
+.shown-panel.show {
   font-weight: 700;
 }
 .shown-panel .checkbox {
@@ -128,4 +116,13 @@ main .sidebar .milestones {
 }
 .milestone i {
   margin-left: 10px;
+}
+@media (max-width: 780px) {
+  main .container {
+    grid-template-columns: 1fr;
+  }
+  main .sidebar,
+  main .done-lists {
+    max-width: 100%;
+  }
 }

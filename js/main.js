@@ -36,10 +36,9 @@ function openMilestone(el, index) {
   const head = el.parentNode;
   if (!currentPanel.classList.contains("open") && shownPanel) {
     shownPanel.classList.remove("open");
-    head.classList.remove("open");
   }
+  head.classList.toggle("show");
   currentPanel.classList.toggle("open");
-  head.classList.toggle("open");
   console.log(el);
   img.src = obj[index].image;
   title.textContent = obj[index].name;
