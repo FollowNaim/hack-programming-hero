@@ -32,10 +32,14 @@ function createDoneList(el) {
 
 function openMilestone(el, index) {
   const shownPanel = document.querySelector(".open");
+  const boldTexts = document.querySelector(".show");
   const currentPanel = el.parentNode.nextElementSibling;
   const head = el.parentNode;
   if (!currentPanel.classList.contains("open") && shownPanel) {
     shownPanel.classList.remove("open");
+  }
+  if (!head.classList.contains("show") && boldTexts) {
+    boldTexts.classList.remove("show");
   }
   head.classList.toggle("show");
   currentPanel.classList.toggle("open");
